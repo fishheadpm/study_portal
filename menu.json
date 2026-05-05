@@ -1,0 +1,75 @@
+{
+  "siteTitle": "学習アプリメニュー",
+  "subjects": [
+    {
+      "id": "japanese",
+      "name": "国語",
+      "page": "japanese.html",
+      "items": [
+        {
+          "title": "助動詞",
+          "url": "https://fishheadpm.github.io/-ancient-cpp/"
+        }
+      ]
+    },
+    {
+      "id": "english",
+      "name": "英語",
+      "page": "english.html",
+      "items": [
+        {
+          "title": "ワードマラソン",
+          "url": "https://fishheadpm.github.io/words/"
+        },
+        {
+          "title": "穴埋め問題①",
+          "url": "https://fishheadpm.github.io/e_blanks/"
+        }
+      ]
+    },
+    {
+      "id": "math",
+      "name": "数学",
+      "page": "math.html",
+      "items": []
+    },
+    {
+      "id": "science",
+      "name": "理科",
+      "page": "science.html",
+      "items": [
+        {
+          "title": "化学式",
+          "url": "https://fishheadpm.github.io/chemistry-easy-app/"
+        },
+        {
+          "title": "化学反応式",
+          "url": "https://fishheadpm.github.io/chemistry-hard-app/"
+        },
+        {
+          "title": "化学",
+          "url": "https://fishheadpm.github.io/chemistry/"
+        },
+        {
+          "title": "生物",
+          "url": "https://fishheadpm.github.io/biology/"
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "name": "社会",
+      "page": "social.html",
+      "items": [
+        {
+          "title": "歴史",
+          "url": "https://fishheadpm.github.io/history/"
+        },
+        {
+          "title": "公民",
+          "url": "https://fishheadpm.github.io/Citizens/"
+        }
+      ]
+    }
+  ]
+}
