@@ -7,8 +7,12 @@
       "page": "japanese.html",
       "items": [
         {
-          "title": "助動詞",
+          "title": "古文助動詞",
           "url": "https://fishheadpm.github.io/-ancient-cpp/"
+        },
+        {
+          "title": "古文テスト対策",
+          "url": "https://fishheadpm.github.io/kobun/"
         },
         {
           "title": "難読語",
