@@ -1,11 +1,9 @@
-const MENU_JSON_URL = 'menu.json?v=1';
+const MENU_JSON_URL = `menu.json?v=${Date.now()}`;
 
 async function loadMenu() {
   try {
-    const response = await fetch(MENU_JSON_URL);
-    if (!response.ok) {
-      throw new Error('menu.jsonを読み込めませんでした');
-    }
+    const response = await fetch(MENU_JSON_URL, { cache: 'no-store' });
+    if (!response.ok) throw new Error('menu.jsonを読み込めませんでした');
     return await response.json();
   } catch (error) {
     showError(error.message);
@@ -15,9 +13,7 @@ async function loadMenu() {
 
 function showError(message) {
   const target = document.getElementById('subjectList') || document.getElementById('appList');
-  if (target) {
-    target.innerHTML = `<p class="error">${escapeHtml(message)}</p>`;
-  }
+  if (target) target.innerHTML = `<p class="error">${escapeHtml(message)}</p>`;
 }
 
 function escapeHtml(text) {
@@ -40,7 +36,6 @@ function createMenuLink(label, url) {
 function renderTopPage(menu) {
   const area = document.getElementById('subjectList');
   if (!area) return;
-
   area.innerHTML = '';
   menu.subjects.forEach(subject => {
     area.appendChild(createMenuLink(subject.name, subject.page));
